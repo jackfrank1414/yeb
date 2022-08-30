@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a5f2c2ae-16cf-42a5-b2ee-fc0cceae89b1" name="Changes" comment="第一次提交代码">
       <changelist_data name="jackfrank1414" email="" />
+      <change afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/jackfrank/server/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeb-server/src/main/java/com/jackfrank/server/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/yeb-server/src/main/java/com/jackfrank/server/config/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +44,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2DwmCnEtMYMayvRIBtqSyzHYFV7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -94,7 +99,7 @@
       <workItem from="1661700915701" duration="1468000" />
       <workItem from="1661702393007" duration="1113000" />
       <workItem from="1661787028254" duration="3048000" />
-      <workItem from="1661870228619" duration="3854000" />
+      <workItem from="1661870228619" duration="4698000" />
     </task>
     <servers />
   </component>
