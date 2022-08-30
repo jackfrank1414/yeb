@@ -1,0 +1,55 @@
+server:
+  # 端口号
+  port: 8081
+
+spring:
+  # 数据库连接配置
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yeb?characterEncoding=utf8
+    username: root
+    password: Wlj1414213562195
+
+    # Hikari 连接池配置
+    # 最小空闲连接数量
+    hikari:
+      minimum-idle: 5
+      # 空闲连接存活最大时间，默认600000（10分钟）
+      idle-timeout: 180000
+      # 连接池最大连接数，默认是10
+      maximum-pool-size: 10
+      # 此属性控制从池返回的连接的默认自动提交行为,默认值：true
+      auto-commit: true
+      # 连接池名称
+      pool-name: MyHikariCP
+      # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      max-lifetime: 1800000
+      # 数据库连接超时时间,默认30秒，即30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+# mybatis-plus配置
+mybatis-plus:
+  # 映射文件地址
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  # mybatis数据返回类型
+  type-aliases-package: com.jackfrank.server.pojo
+  configuration:
+    # 自动驼峰命名
+    map-underscore-to-camel-case: false
+
+# mybatis sql 打印
+logging:
+  level:
+    com.jackfrank.server.mapper: debug
+
+jwt:
+  # Jwt存储的请求头
+  tokenHeader: Authorization
+  # Jwt加密秘钥
+  secret: yeb-secret
+  # Jwt 的超期限时间（60*60）*24
+  expiration: 604800
+  # Jwt负载中拿到开头
+  tokenHead: Bearer
